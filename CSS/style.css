@@ -352,7 +352,7 @@ button:active, button:focus {
 .equipment-rent{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 140px;
 }
 
 .equipment-rent-content{
