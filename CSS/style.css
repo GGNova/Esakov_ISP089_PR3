@@ -29,12 +29,16 @@ body{
     padding: 0px;
 }
 
+button:active, button:focus {
+    outline: none;
+  }
+
 .main{
-    max-width: 1980px;
+    max-width: 1220px;
 }
 
 .header{
-    max-width: 1780px;
+    max-width: 1110px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -43,6 +47,7 @@ body{
 
 .header-bg{
     background-image: url(../IMG/header-bg.png);
+    background-repeat: no-repeat;
     height: 800px;
 }
 
@@ -96,16 +101,15 @@ body{
     background-color: rgba(0,91,193,0.6);
     width: 445px;
     height: 720px;
-    position: absolute;
-    top:13%;
-    left: 20%;
+    margin-top: 15px;
+    margin-left: 55px;
 }
 
 .header-content{
     position: absolute;
     width: 635px;
     height: 317px;
-    left: 31%;
+    left: 20%;
     top: 24.5%;
 }
 
@@ -269,6 +273,8 @@ body{
     font-family: 'Oswald-regular';
     font-size: 24px;   
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .COMPULITE{
@@ -276,14 +282,16 @@ body{
     margin-left: 45px;
     font-size: 24px;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
-.ROBE:hover{
+.ROBE:focus{
     color: #005BC1;
     text-decoration: underline #005BC1 ;
 }
 
-.COMPULITE:hover{
+.COMPULITE:focus{
     color: #005BC1;
     text-decoration: underline #005BC1 ;
 }
@@ -488,7 +496,7 @@ body{
     display: flex;
     width: 540px;
     height: 242px;
-    margin-top: 8px;
+    margin-top: 25px;
 }
 
 .news-block1-pick{
@@ -497,6 +505,7 @@ body{
     width: 255px;
     height: 242px;
     background-size: 255px;
+    margin-top: 20px;
 }
 
 .block1-text-headline{
@@ -520,12 +529,14 @@ body{
 
 .text-content-text{
     width: 255px;
-    margin-top: 8.5px;
+}
+
+.block1-link{
+    margin-top: 24px;
 }
 
 .block1-link a{
     color: black;
-    margin-top: 20px;
 }
 
 .news-content-block2{
@@ -534,6 +545,7 @@ body{
     flex-direction: column;
     width: 225px;
     height: 242px;
+    margin-top: 19px;
 }
 
 .block2-headline p{
