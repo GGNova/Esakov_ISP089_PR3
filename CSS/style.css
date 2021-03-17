@@ -507,6 +507,17 @@ body{
     background-size: 255px;
 }
 
+.block1-text-headline{
+    display: flex;
+}
+
 .news-block1-text{
     margin-left: 20px;
+    font-family: 'Oswald normal', sans-serif;
+}
+
+.headline-date{
+    margin-left: 60px;
+    font-family: 'Open Sans semi-bold', sans-serif;
+    color: #979797;
 }
