@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Open Sans light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  @font-face {
+    font-family: 'Open Sans semi-bold';
+    font-style: semi-bold;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  
+@font-face {
+    font-family: 'Oswald normal';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUtiZTaR.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  @font-face {
+    font-family: 'Open Sans regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    max-width: 1980px;
+}
+
+.header{
+    max-width: 1780px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-bg{
+    background-image: url(../IMG/header-bg.png);
+    height: 800px;
+}
+
+.header-nav-menu{
+    height: 80px;
+    display: flex;
+    max-width: 1780px;
+    margin: auto;
+    position: absolute;
+    left:37%;
+}
+
+
+.header-nav-text{
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans semi-bold', sans-serif;
+}
+
+.header-nav-text:nth-child(2){
+    margin-left: 10px;
+}
+
+.header-nav-text:nth-child(3){
+    margin-left: 10px;
+}
+
+.header-nav-text:nth-child(4){
+    margin-left: 10px;
+}
+
+.header-nav-text:nth-child(5){
+    margin-left: 10px;
+}
+
+.header-nav-bgmenu{
+    height: 80px;
+    background-color: rgba(0,91,193,0.6);
+}
+
+.logo{
+    background-image: url(../ICONS/logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: 11px ;
+    width: 140px;
+    height: 65px;
+    margin-left: 25px;
+}
+
+.header-vetical-sqare{
+    background-color: rgba(0,91,193,0.6);
+    width: 445px;
+    height: 720px;
+    position: absolute;
+    top:13%;
+    left: 20%;
+}
+
+.header-content{
+    position: absolute;
+    width: 635px;
+    height: 317px;
+    left: 31%;
+    top: 24.5%;
+}
+
+.header-headline{
+    color: white;
+    font-family: 'Oswald normal', sans-serif;
+    font-size: 38px;
+    letter-spacing: 1%;
+    line-height: 71px;
+}
+
+
+.header-content-text{
+    margin-top: 40px;
+    color: white;
+    font-family: 'Open Sans regular', sans-serif;
+    width: 445px;
+    line-height: 21px;
+}
+
+.header-content-btn{
+    margin-top: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    width: 160px;
+    font-family: 'Open Sans semi-bold', sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-content-btn:hover{
+    border-radius: 10px;
+    transform: scale(1.05);  
+}
+
+.content{
+    padding-top: 140px;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.heading-decor{
+    background-image: url(../ICONS/decor-heading.svg);
+    width: 100px;
+    height: 15px;
+    margin-top: 25px;
+}
+
+.our-proects-title{
+    display: flex;
+}
+
+.title-text{
+    margin-left: 40px;
+    font-family: 'Oswald normal', sans-serif;
+}
+
+.slider-btns{
+    display: flex;
+    margin-left: 60%;
+}
+
+.slider-right{
+    background-image:url(../ICONS/slider-btn-right.svg);
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-left: -2px;
+}
+
+.slider-right:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px -3px rgba(34, 60, 80, 0.5);
+}
+
+.slider-left{
+    background-image: url(../ICONS/slider-btn-left.svg);
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+}
+
+.slider-left:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px -3px rgba(34, 60, 80, 0.5);
+}
+
+.our-proects-content{
+    display: flex;
+}
+
+.ourProects-content-block1{
+    background-image: url(../IMG/our-proects-pick1.png) ;
+    background-size: 540px;
+    width: 540px;
+    height: 400px;
+}
+
+.ourProects-content-block2{
+    background-image: url(../IMG/our-proects-pick1.png) ;
+    width: 540px;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.ourProects-content-discriptionOfBlock1{
+    width: 250px ;
+    height: 110px ;
+    background-color: white;
+    position: relative;
+    left: 47%;
+    top: 63%;
+}
+
+.discription-text{
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.discription-add{
+    font-family: "Open Sans light", sans-serif;
+    font-size: 14px;
+    width: 200px;
+}
+
+.discription-headline{
+    font-family: 'Oswald normal', sans-serif;
+    font-weight:  500;
+    font-size: 18px;
+}
+
+.catalog-of-products{
+    margin-top: 150px;
+}
+
+.catalog-of-products .slider-btns{
+    margin-left: 53.35%;
+}
+
+.catalog-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-categories{
+    display: flex;
+    margin-top: 70px;
+}
+
+.ROBE{
+    font-family: 'Oswald normal', sans-serif;
+    font-size: 24px;   
+    cursor: pointer;
+}
+
+.COMPULITE{
+    font-family: 'Oswald normal', sans-serif;
+    margin-left: 45px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ROBE:hover{
+    color: #005BC1;
+    text-decoration: underline #005BC1 ;
+}
+
+.COMPULITE:hover{
+    color: #005BC1;
+    text-decoration: underline #005BC1 ;
+}
+
+.catalog-products{
+    display: flex;
+    margin-top: 50px;
+}
+
+.product-card{
+    width: 350px;
+    height: 300px;
+}
+
+.product-card:nth-child(1){
+    background-image: url(../IMG/product-pick1.png);
+    background-size: 350px ;
+}
+
+.product-card:nth-child(2){
+    background-image: url(../IMG/product-pick2.png);
+    background-size: 350px ;
+    margin-left: 30px;
+}
+
+.product-card:nth-child(3){
+    background-image: url(../IMG/product-pick3.png);
+    background-size: 350px ;
+    margin-left: 30px;
+}
+
+.productDiscription{
+    position: relative;
+    background-color: #005BC1;
+    width: 265px;
+    height: 85px;
+    top: 60%;
+    left: 24%;
+}
+
+.productDiscription-Text{
+    color: white;
+    font-family: 'Oswald normal', sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: 25%;
+    padding: 10px 36px 15px 21px;
+}
+
+.productDiscription-Text:nth-child(1){
+    width: 230px;
+}
+
+.equipment-rent .slider-btns{
+    margin-left: 49.205%;
+}
+
+.equipment-rent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.equipment-rent-content{
+    display: flex; 
+    margin-top: 40px;
+}
+
+.rent-leftBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 450px;
+    width: 350px;
+}
+
+.rent-leftBlock-text{
+    font-family: "Open Sans light", sans-serif;
+    font-size: 18px;
+}
+
+.rent-rightBlock{
+    width: 665px;
+    height: 450px;
+    border: 3px solid #005BC1;
+    margin-left: 150px;
+}
+
+.rent-rightBlock-sliderLeft{
+    background-image: url(../ICONS/small-slider-left.svg);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+}
+
+.rent-rightBlock-sliderLeft:hover{
+    transform:scale(1.05);
+    box-shadow: 3px 3px 10px -3px rgba(34, 60, 80, 0.5);
+}
+
+.rent-rightBlock-sliderRight{
+    background-image: url(../ICONS/small-slider-right.svg);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    margin-left: -2px;
+    transition: 0.5s;
+}
+
+.rent-rightBlock-sliderRight:hover{
+    transform:scale(1.05);
+    box-shadow: 3px 3px 10px -3px rgba(34, 60, 80, 0.5);
+}
+
+
+
+.rent-rightBlock-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    margin-left: 30px;
+}
+
+.rBlock-content-headline{
+    display: flex;
+}
+
+.rBlock-content-headlineSliders{
+    display: flex;
+    margin-right: 30px;
+}
+
+.rBlock-content-headline-title{
+    font-family: 'Oswald normal', sans-serif;   
+    width: 550px;
+}
+
+.rBlock-product{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.rBlock-product-img{
+    background-image:url(../IMG/rent-rBlock-img.png);
+    width: 255px;
+    height: 250px;
+    background-size: 255px;
+}
+
+.rBlock-productDiscription{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.rBlock-productName{
+    font-family: 'Oswald normal', sans-serif; 
+}
+
+.rBlock-productStats{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    margin-left: -25px;
+    font-family: "Open Sans light", sans-serif;
+}
+
+.rBlock-productStats-style{
+    margin-top: 20px;
+}
+
+.news{
+    margin-top: 100px;
+}
+
+.allNews-btn{
+    width: 190px;
+    height: 50px;
+    background-color: #005BC1;
+    border: none;
+    margin-top: 10px;
+    margin-left: 60%;
+    color: white;
+    transition: 0.5s;
+}
+
+.news-Content{
+    margin-top: 75px;
+}
+
+.allNews-btn:hover{
+    transform:scale(1.1);
+    filter: brightness(1.1);
+    box-shadow: 3px 3px 10px -3px rgba(34, 60, 80, 0.5);
+}
+
+.news-Content-block1{
+    display: flex;
+}
+
+.news-block1-pick{
+    background-image:url(../IMG/news-pick1.png);
+    background-repeat:no-repeat;
+    width: 255px;
+    height: 242px;
+    background-size: 255px;
+}
+
+.news-block1-text{
+    margin-left: 20px;
+}
