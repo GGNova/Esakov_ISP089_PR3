@@ -218,9 +218,21 @@ button:active, button:focus {
 
 .ourProects-content-block2{
     background-image: url(../IMG/our-proects-pick1.png) ;
+    background-size: 540px;
     width: 540px;
     height: 400px;
     margin-left: 30px;
+}
+
+.item{
+    
+}
+
+.sliding{
+    background-image: url(../IMG/slider2.png) ;
+    background-size: 540px;
+    width: 540px;
+    height: 400px;
 }
 
 .ourProects-content-discriptionOfBlock1{
@@ -239,6 +251,12 @@ button:active, button:focus {
 }
 
 .discription-add{
+    font-family: "OpenSans-Light";
+    font-size: 14px;
+    width: 200px;
+}
+
+.discription-add2{
     font-family: "OpenSans-Light";
     font-size: 14px;
     width: 200px;
