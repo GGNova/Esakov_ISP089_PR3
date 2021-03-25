@@ -1,47 +1,39 @@
 const sliderBlock1 = document.querySelector('.slider-left');
 const sliderBlock2 = document.querySelector('.slider-right');
-const leftSlide = document.querySelector('.Slider-btn-left');
-const rightSlide = document.querySelector('.Slider-btn-right');
 
 let pick1 = document.querySelector('.ourProects-content-block1');
 let pick2 = document.querySelector('.ourProects-content-block2');
 
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlide(){
-  showSlides(slideIndex += 1);
+/* этот код помечает картинки, для удобства разработки */
+let i = 1;
+for(let li of carousel.querySelectorAll('li')) {
+  li.style.position = 'relative';
+  li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+  i++;
 }
 
-function minusSlide(){
-  showSlides(slideIndex = n);
-}
+/* конфигурация */
+let width = 560; // ширина картинки
+let count = 2; // видимое количество изображений
 
-function showSlides(n){
-  let i;
-  let slides = document.querySelector('.item');
+let list = carousel.querySelector('ul');
+let listElems = carousel.querySelectorAll('li');
 
-  if(n > slides.length){
-    slideIndex = 1
-  }
-  if (n < 1 ) {
-    slideIndex = slides.length
-  }
+let position = 0; // положение ленты прокрутки
 
-for (i = 0; i < slides.length; i++){
-  slides[i].style.display = "none";
-}
-slides[slideIndex - 1].style.display = "block";
-}
+sliderBlock1.onclick = function() {
+  // сдвиг влево
+  position += width * count;
+  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+  position = Math.min(position, 0)
+  list.style.marginLeft = position + 'px';
+};
 
-
-function slide(){
-  console.log("slide")
-
-  pick1.classList.toggle('.sliding');
-
-  pick2.classList.toggle('.sliding');
-}
-
-sliderBlock1.addEventListener('click', minusSlide);
-sliderBlock2.addEventListener('click', plusSlide);
+sliderBlock2.onclick = function() {
+  // сдвиг вправо
+  position -= width * count;
+  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+  position = Math.max(position, -width * (listElems.length - count));
+  list.style.marginLeft = position + 'px';
+};
